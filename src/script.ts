@@ -142,11 +142,11 @@ const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
 let sakib = new Player("Sakib", 35, "Bangladesh");
 
 // sakib.name = "Mashrafi";
-sakib.age = 40;
+// sakib.age = 40;
 // sakib.country = "England";
 
 // console.log(sakib.name);
-console.log(sakib.age);
+// console.log(sakib.age);
 console.log(sakib.country);
 
 // const players: string[] = [];
@@ -186,3 +186,43 @@ drawRectangle(threeDOptions);
 //   width: 30,
 //   length: 40,
 // });
+
+//GENERICS=>>>>>>>
+
+// const addId = <
+//   T extends {
+//     name: string;
+//     age: number;
+//   },
+// >(
+//   obj: T,
+// ) => {
+//   let id = Math.floor(Math.random() * 100);
+//   return { ...obj, id };
+// };
+
+// let user = addId({
+//   name: "Mashrafi",
+//   age: 40,
+//   country: "Bangladesh",
+// });
+
+// // let user = "Mashrafi"
+// addId(user);
+
+// Interface GENERICS
+
+interface APIResponse<T> {
+  status: number;
+  type: string;
+  data: T;
+}
+
+const response1: APIResponse<object> = {
+  status: 200,
+  type: "good",
+  data: {
+    name: "Test",
+    something: 300,
+  },
+};
