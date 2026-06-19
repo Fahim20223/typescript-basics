@@ -96,37 +96,64 @@
 //   console.log(`Hello ${user.age > 50 ? "Sir" : "Mr."} ${user.name}`);
 // };
 
-//signature=>
-let add: (x: number, y: number) => number;
+//functional signature=>
+// let add: (x: number, y: number) => number;
 
-add = (a: number, b: number) => {
-  //   console.log(a + b);=>void
-  return a + b;
-};
+// add = (a: number, b: number) => {
+//   //   console.log(a + b);=>void
+//   return a + b;
+// };
 
-let calculation: (x: number, y: number, z: string) => number;
+// let calculation: (x: number, y: number, z: string) => number;
 
-calculation = (a: number, b: number, c: string) => {
-  if (c === "add") {
-    return a + b;
-  } else {
-    return a - b;
+// calculation = (a: number, b: number, c: string) => {
+//   if (c === "add") {
+//     return a + b;
+//   } else {
+//     return a - b;
+//   }
+// };
+// console.log(calculation(5, 6, "add"));
+
+// let userDetails: (
+//   id: number | string,
+//   userInfo: {
+//     name: string;
+//     age: number;
+//   },
+// ) => void;
+
+// userDetails = (
+//   id: string | number,
+//   user: {
+//     name: string;
+//     age: number;
+//   },
+// ) => {};
+
+// Classes in typescript
+
+class Player {
+  name: string;
+  age: number;
+  country: string;
+
+  constructor(n: string, a: number, c: string) {
+    this.name = n;
+    this.age = a;
+    this.country = c;
   }
-};
-console.log(calculation(5, 6, "add"));
+  play() {
+    console.log(`${this.name} from ${this.country} is playing!`);
+  }
+}
 
-let userDetails: (
-  id: number | string,
-  userInfo: {
-    name: string;
-    age: number;
-  },
-) => void;
+const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
+const sakib = new Player("Sakib", 38, "Bangladesh");
 
-userDetails = (
-  id: string | number,
-  user: {
-    name: string;
-    age: number;
-  },
-) => {};
+// const players: string[] = [];
+const players: Player[] = [];
+
+// players.push("Sakib")=>not applicable
+players.push(sakib);
+players.push(mashrafi);
