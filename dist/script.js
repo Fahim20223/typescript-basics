@@ -1,10 +1,8 @@
-"use strict";
 // let person = {
 //   name: "Mashrafi",
 //   age: 25,
 //   isCaptain: true,
 // };
-Object.defineProperty(exports, "__esModule", { value: true });
 // person.age = 34;
 //Normal variable
 // let b: string | number;
@@ -52,10 +50,73 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //   console.log("Hello");
 // };
 // myFunc = 5;
-let myFunc = (a, b, c) => {
-    console.log(c);
-    console.log(`Hello ${a} ${b}`);
-};
+// let myFunc = (a: string, b: string, c: string = "true") => {
+//   //   console.log(c);
+//   //   console.log(`Hello ${a} ${b}`);
+//   return a + b;
+// };
+// let myFunc = (a: number, b: number, c: string = "true") => {
+//   console.log(c);
+//   console.log(`Hello ${a} ${b}`);
+//   return a + b;
+// };
 // myFunc("3", "4");
-myFunc("A", "b", "C");
+// myFunc("A", "b", "false");
+// myFunc(4, 8, "false");
+//Type alias =>
+// type stringOrNum = string | number;
+// type userType = {
+//   name: string;
+//   age: number;
+// };
+// const userDetails = (id: stringOrNum, user: userType) => {
+//   console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
+// };
+// const sayHello = (user: userType) => {
+//   console.log(`Hello ${user.age > 50 ? "Sir" : "Mr."} ${user.name}`);
+// };
+//functional signature=>
+// let add: (x: number, y: number) => number;
+// add = (a: number, b: number) => {
+//   //   console.log(a + b);=>void
+//   return a + b;
+// };
+// let calculation: (x: number, y: number, z: string) => number;
+// calculation = (a: number, b: number, c: string) => {
+//   if (c === "add") {
+//     return a + b;
+//   } else {
+//     return a - b;
+//   }
+// };
+// console.log(calculation(5, 6, "add"));
+// let userDetails: (
+//   id: number | string,
+//   userInfo: {
+//     name: string;
+//     age: number;
+//   },
+// ) => void;
+// userDetails = (
+//   id: string | number,
+//   user: {
+//     name: string;
+//     age: number;
+//   },
+// ) => {};
+// Classes in typescript
+import { Player } from "./classes/Player.js";
+const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
+const sakib = new Player("Sakib", 38, "Bangladesh");
+// sakib.name = "Mashrafi";
+sakib.age = 40;
+// sakib.country = "England";
+// console.log(sakib.name);
+console.log(sakib.age);
+console.log(sakib.country);
+// const players: string[] = [];
+const players = [];
+// players.push("Sakib")=>not applicable
+players.push(sakib);
+players.push(mashrafi);
 //# sourceMappingURL=script.js.map

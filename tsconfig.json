@@ -7,8 +7,10 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
-    "target": "esnext",
+    // "module": "nodenext",
+    "module": "es6",
+    // "target": "esnext",
+    "target": "es2015",
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],

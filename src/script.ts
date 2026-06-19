@@ -133,36 +133,16 @@
 
 // Classes in typescript
 
-class Player {
-  // private name: string;
-  // age: number; //=>public by-default thAke tai diTe hoi na
-  // readonly country: string;
-
-  // constructor(n: string, a: number, c: string) {
-  //   this.name = n;
-  //   this.age = a;
-  //   this.country = c;
-  // }
-
-  constructor(
-    private name: string,
-    public age: number,
-    readonly country: string,
-  ) {}
-
-  play() {
-    console.log(`${this.name} from ${this.country} is playing!`);
-  }
-}
+import { Player } from "./classes/Player.js";
 
 const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
 const sakib = new Player("Sakib", 38, "Bangladesh");
 
-sakib.name = "Mashrafi";
+// sakib.name = "Mashrafi";
 sakib.age = 40;
-sakib.country = "England";
+// sakib.country = "England";
 
-console.log(sakib.name);
+// console.log(sakib.name);
 console.log(sakib.age);
 console.log(sakib.country);
 
