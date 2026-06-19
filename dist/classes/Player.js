@@ -1,3 +1,4 @@
+import { IsPlayer } from "../interfaces/Isplayer";
 export class Player {
     // private name: string;
     // age: number; //=>public by-default thAke tai diTe hoi na

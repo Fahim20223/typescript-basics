@@ -119,4 +119,22 @@ const players = [];
 // players.push("Sakib")=>not applicable
 players.push(sakib);
 players.push(mashrafi);
+function drawRectangle(options) {
+    let width = options.width;
+    let length = options.length;
+}
+// function drawRectangle(options: { width: number; length: number }) {
+//   let width = options.width;
+//   let length = options.length;
+// }
+let threeDOptions = {
+    width: 30,
+    length: 40,
+    height: 10,
+};
+drawRectangle(threeDOptions);
+// drawRectangle({
+//   width: 30,
+//   length: 40,
+// });
 //# sourceMappingURL=script.js.map

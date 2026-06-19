@@ -1,5 +1,5 @@
 export declare class Player {
-    private name;
+    name: string;
     age: number;
     readonly country: string;
     constructor(name: string, age: number, country: string);

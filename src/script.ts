@@ -134,9 +134,12 @@
 // Classes in typescript
 
 import { Player } from "./classes/Player.js";
+import { IsPlayer } from "./interfaces/IsPlayer.js";
 
 const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
-const sakib = new Player("Sakib", 38, "Bangladesh");
+// const sakib = new Player("Sakib", 38, "Bangladesh");
+
+let sakib = new Player("Sakib", 35, "Bangladesh");
 
 // sakib.name = "Mashrafi";
 sakib.age = 40;
@@ -147,8 +150,39 @@ console.log(sakib.age);
 console.log(sakib.country);
 
 // const players: string[] = [];
-const players: Player[] = [];
+// const players: Player[] = [];
+const players: IsPlayer[] = [];
 
 // players.push("Sakib")=>not applicable
 players.push(sakib);
 players.push(mashrafi);
+
+//Interfaces Of TypeScript
+
+//when we user interface in Object =>>>>
+interface RectangleOptions {
+  width: number;
+  length: number;
+}
+
+function drawRectangle(options: RectangleOptions) {
+  let width = options.width;
+  let length = options.length;
+}
+// function drawRectangle(options: { width: number; length: number }) {
+//   let width = options.width;
+//   let length = options.length;
+// }
+
+let threeDOptions = {
+  width: 30,
+  length: 40,
+  height: 10,
+};
+
+drawRectangle(threeDOptions);
+
+// drawRectangle({
+//   width: 30,
+//   length: 40,
+// });
