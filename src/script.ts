@@ -81,6 +81,7 @@
 // myFunc("A", "b", "false");
 // myFunc(4, 8, "false");
 
+//Type alias =>
 // type stringOrNum = string | number;
 // type userType = {
 //   name: string;
@@ -95,9 +96,37 @@
 //   console.log(`Hello ${user.age > 50 ? "Sir" : "Mr."} ${user.name}`);
 // };
 
+//signature=>
 let add: (x: number, y: number) => number;
 
 add = (a: number, b: number) => {
   //   console.log(a + b);=>void
   return a + b;
 };
+
+let calculation: (x: number, y: number, z: string) => number;
+
+calculation = (a: number, b: number, c: string) => {
+  if (c === "add") {
+    return a + b;
+  } else {
+    return a - b;
+  }
+};
+console.log(calculation(5, 6, "add"));
+
+let userDetails: (
+  id: number | string,
+  userInfo: {
+    name: string;
+    age: number;
+  },
+) => void;
+
+userDetails = (
+  id: string | number,
+  user: {
+    name: string;
+    age: number;
+  },
+) => {};
