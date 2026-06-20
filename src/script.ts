@@ -239,7 +239,7 @@ enum RType {
 interface APIResponse<T> {
   status: number;
   type: RType;
-  dat: T;
+  data: T;
 }
 
 const response1: APIResponse<string> = {
