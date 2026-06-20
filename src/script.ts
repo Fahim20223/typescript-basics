@@ -212,17 +212,40 @@ drawRectangle(threeDOptions);
 
 // Interface GENERICS
 
-interface APIResponse<T> {
-  status: number;
-  type: string;
-  data: T;
+// interface APIResponse<T> {
+//   status: number;
+//   type: string;
+//   data: T;
+// }
+
+// const response1: APIResponse<object> = {
+//   status: 200,
+//   type: "good",
+//   data: {
+//     name: "Test",
+//     something: 300,
+//   },
+// };
+
+// ENUMS
+
+enum RType {
+  SUCCESS,
+  FAILURE,
+  UNAUTHENTICATED,
+  FORBIDDEN,
 }
 
-const response1: APIResponse<object> = {
+interface APIResponse<T> {
+  status: number;
+  type: RType;
+  dat: T;
+}
+
+const response1: APIResponse<string> = {
   status: 200,
-  type: "good",
-  data: {
-    name: "Test",
-    something: 300,
-  },
+  type: RType.SUCCESS,
+  data: "test",
 };
+
+console.log(response1);
