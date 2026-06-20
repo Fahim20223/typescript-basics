@@ -229,23 +229,33 @@ drawRectangle(threeDOptions);
 
 // ENUMS
 
-enum RType {
-  SUCCESS,
-  FAILURE,
-  UNAUTHENTICATED,
-  FORBIDDEN,
-}
+// enum RType {
+//   SUCCESS,
+//   FAILURE,
+//   UNAUTHENTICATED,
+//   FORBIDDEN,
+// }
 
-interface APIResponse<T> {
-  status: number;
-  type: RType;
-  data: T;
-}
+// interface APIResponse<T> {
+//   status: number;
+//   type: RType;
+//   data: T;
+// }
 
-const response1: APIResponse<string> = {
-  status: 200,
-  type: RType.SUCCESS,
-  data: "test",
-};
+// const response1: APIResponse<string> = {
+//   status: 200,
+//   type: RType.SUCCESS,
+//   data: "test",
+// };
 
-console.log(response1);
+// console.log(response1);
+
+//TUPLES
+
+let a = [3, "hello", { p: 3 }];
+
+let b: [number, string, object] = [4, "world", { t: 1 }];
+
+// b[1] = 4;
+
+b.push();
