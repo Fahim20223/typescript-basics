@@ -1,1 +1,10 @@
-const firstName = "Md Fahim Shahrier";
+let fullName: string = "Md Fahim Shahrier";
+
+let age: number = 30;
+let skill: string = "MERN Stack";
+let isSenior: boolean = false;
+
+fullName = "Shahrier Fahim";
+age = 50;
+
+export {};
