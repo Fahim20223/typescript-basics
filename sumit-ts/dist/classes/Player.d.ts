@@ -1,8 +1,10 @@
-export declare class Player {
+import { IsPlayer } from "../interfaces/IsPlayer.js";
+export declare class Player implements IsPlayer {
     name: string;
-    age: number;
+    private age;
     readonly country: string;
     constructor(name: string, age: number, country: string);
+    getProperty(): number;
     play(): void;
 }
 //# sourceMappingURL=Player.d.ts.map

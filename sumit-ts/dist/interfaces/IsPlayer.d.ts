@@ -1,7 +1,7 @@
 export interface IsPlayer {
     name: string;
-    age: number;
     country: string;
     play(): void;
+    getProperty(): number;
 }
-//# sourceMappingURL=Isplayer.d.ts.map
+//# sourceMappingURL=IsPlayer.d.ts.map

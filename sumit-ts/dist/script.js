@@ -106,15 +106,18 @@
 // ) => {};
 // Classes in typescript
 import { Player } from "./classes/Player.js";
+import { IsPlayer } from "./interfaces/IsPlayer.js";
 const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
-const sakib = new Player("Sakib", 38, "Bangladesh");
+// const sakib = new Player("Sakib", 38, "Bangladesh");
+let sakib = new Player("Sakib", 35, "Bangladesh");
 // sakib.name = "Mashrafi";
-sakib.age = 40;
+// sakib.age = 40;
 // sakib.country = "England";
 // console.log(sakib.name);
-console.log(sakib.age);
+// console.log(sakib.age);
 console.log(sakib.country);
 // const players: string[] = [];
+// const players: Player[] = [];
 const players = [];
 // players.push("Sakib")=>not applicable
 players.push(sakib);
@@ -137,4 +140,60 @@ drawRectangle(threeDOptions);
 //   width: 30,
 //   length: 40,
 // });
+//GENERICS=>>>>>>>
+// const addId = <
+//   T extends {
+//     name: string;
+//     age: number;
+//   },
+// >(
+//   obj: T,
+// ) => {
+//   let id = Math.floor(Math.random() * 100);
+//   return { ...obj, id };
+// };
+// let user = addId({
+//   name: "Mashrafi",
+//   age: 40,
+//   country: "Bangladesh",
+// });
+// // let user = "Mashrafi"
+// addId(user);
+// Interface GENERICS
+// interface APIResponse<T> {
+//   status: number;
+//   type: string;
+//   data: T;
+// }
+// const response1: APIResponse<object> = {
+//   status: 200,
+//   type: "good",
+//   data: {
+//     name: "Test",
+//     something: 300,
+//   },
+// };
+// ENUMS
+// enum RType {
+//   SUCCESS,
+//   FAILURE,
+//   UNAUTHENTICATED,
+//   FORBIDDEN,
+// }
+// interface APIResponse<T> {
+//   status: number;
+//   type: RType;
+//   data: T;
+// }
+// const response1: APIResponse<string> = {
+//   status: 200,
+//   type: RType.SUCCESS,
+//   data: "test",
+// };
+// console.log(response1);
+//TUPLES
+let a = [3, "hello", { p: 3 }];
+let b = [4, "world", { t: 1 }];
+// b[1] = 4;
+b.push();
 //# sourceMappingURL=script.js.map

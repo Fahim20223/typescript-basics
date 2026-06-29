@@ -1,4 +1,4 @@
-import { IsPlayer } from "../interfaces/Isplayer";
+import { IsPlayer } from "../interfaces/IsPlayer.js";
 export class Player {
     // private name: string;
     // age: number; //=>public by-default thAke tai diTe hoi na
@@ -12,6 +12,9 @@ export class Player {
         this.name = name;
         this.age = age;
         this.country = country;
+    }
+    getProperty() {
+        return this.age;
     }
     play() {
         console.log(`${this.name} from ${this.country} is playing!`);
