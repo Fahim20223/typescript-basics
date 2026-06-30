@@ -1,3 +1,5 @@
-const firstName: string = "Fahim Shahrier";
+const ageCal = (name: string, age: number) => {
+  return `Hi ${name}, you are ${age} old`;
+};
 
-firstName = "saki";
+ageCal("fahim", 40);

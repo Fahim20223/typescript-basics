@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const firstName = "Fahim Shahrier";
-firstName = "saki";
+const ageCal = (name, age) => {
+    return `Hi ${name}, you are ${age} old`;
+};
+ageCal("fahim", 40);
 //# sourceMappingURL=main.js.map
