@@ -4,4 +4,6 @@ let skill = "MERN Stack";
 let isSenior = false;
 fullName = "Shahrier Fahim";
 age = 50;
+let devs;
+devs = 1000;
 export {};

@@ -7,4 +7,8 @@ let isSenior: boolean = false;
 fullName = "Shahrier Fahim";
 age = 50;
 
+let devs: string | number | boolean;
+
+devs = 1000;
+
 export {};
