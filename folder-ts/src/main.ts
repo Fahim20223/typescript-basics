@@ -42,3 +42,9 @@ food.push("yamal");
 console.log(food);
 
 //: string[] dicchi mane string thakbe bitore kintu ta hobeh array er bhitore... ekhane onno type dea jabeh na like number, ..... but jodi union use kori tahole dite parbo...
+
+const devs: [string, number, boolean] = ["fahim Shahrier", 30, false];
+
+devs[0] = "jibon";
+
+console.log(devs);
