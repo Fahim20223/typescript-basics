@@ -14,3 +14,7 @@ const ageCal2 = (name: string = "fahim", age: number = 30): string => {
 };
 
 ageCal2();
+
+const info = (name: string) => {
+  throw new Error("");
+};
