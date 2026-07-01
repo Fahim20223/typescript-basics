@@ -18,3 +18,27 @@ ageCal2();
 const info = (name: string) => {
   throw new Error("");
 };
+
+// Array
+
+// const food: (string | number | boolean)[] = [
+//   "alo",
+//   "potol",
+//   "lao",
+//   "kumra",
+//   10,
+//   true,
+//   false,
+// ];
+const food: string[] = ["alo", "potol", "lao", "kumra"];
+
+// food.push(20);
+
+food.push("aam");
+food.push("jam");
+food.push("kathal");
+food.push("yamal");
+
+console.log(food);
+
+//: string[] dicchi mane string thakbe bitore kintu ta hobeh array er bhitore... ekhane onno type dea jabeh na like number, ..... but jodi union use kori tahole dite parbo...
