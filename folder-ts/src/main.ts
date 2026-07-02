@@ -46,5 +46,11 @@ console.log(food);
 const devs: [string, number, boolean] = ["fahim Shahrier", 30, false];
 
 devs[0] = "jibon";
+devs[1] = 40;
+devs[2] = false;
+devs.push("zero");
+// devs.pop(40);
 
 console.log(devs);
+
+// array er moddeh declare korar age bole di konta kon type hobeh etao kora jai like upore korsi & pore amra jokhon notun kichu push korbo sheta typescript nije nije any type dhore nibe that's why push() kora jai but pop() kora jai na...
