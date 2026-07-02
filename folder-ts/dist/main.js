@@ -41,4 +41,23 @@ devs.push("zero");
 // devs.pop(40);
 console.log(devs);
 // array er moddeh declare korar age bole di konta kon type hobeh etao kora jai like upore korsi & pore amra jokhon notun kichu push korbo sheta typescript nije nije any type dhore nibe that's why push() kora jai but pop() kora jai na...
+//Object
+// const dev = {
+//   name: "Fahim Shahrier",
+//   age: 30,
+//   skill: false,
+// };
+// dev.name = "ashraful";
+// dev.name = 70 ; => it will not give the permission because name is assign string in that object that's why...
+// dev.name = "jamal";
+// dev.age = 40;
+// dev.skill = true;
+const dev = {
+    name: "fahim shahrier",
+    age: 30,
+    // skill: false,
+};
+// dev.name = "fahim";
+// skill?: => erkom likhar karon holo skill jodi object er bhitore declare na kori tai optional bhabe dilam skill declare na korleo pera nai mane skill na likhleo pera nai tai "?" die optional dilam than name: string | number | boolean; erkom dilam mane jekono 3 tar moddhe ekta hote pare...
+// name er age readonly die disi just bujhar jonne je eta poriborton kora jabeh nah just dekha jabeh tai dev.name die ow kora jabeh na just console.log(dev.name) erkom kore dekhte parbo
 //# sourceMappingURL=main.js.map
