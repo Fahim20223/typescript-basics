@@ -70,17 +70,38 @@ console.log(devs);
 // dev.age = 40;
 // dev.skill = true;
 
-const dev: {
-  readonly name: string | number | boolean;
-  age: number;
-  skill?: boolean;
-} = {
-  name: "fahim shahrier",
-  age: 30,
-  // skill: false,
-};
+// const dev: {
+//   readonly name: string | number | boolean;
+//   age: number;
+//   skill?: boolean;
+// } = {
+//   name: "fahim shahrier",
+//   age: 30,
+//   // skill: false,
+// };
 // dev.name = "fahim";
 
 // skill?: => erkom likhar karon holo skill jodi object er bhitore declare na kori tai optional bhabe dilam skill declare na korleo pera nai mane skill na likhleo pera nai tai "?" die optional dilam than name: string | number | boolean; erkom dilam mane jekono 3 tar moddhe ekta hote pare...
 
 // name er age readonly die disi just bujhar jonne je eta poriborton kora jabeh nah just dekha jabeh tai dev.name die ow kora jabeh na just console.log(dev.name) erkom kore dekhte parbo
+
+// amnra abar alada "type" declare kore sheta object e die dite pari oita arro bhalo like nicher moto :
+
+type User = {
+  readonly name: string;
+  age: number;
+  skill?: boolean;
+};
+
+// interface ow kind of erkomi but "type" & "interface" er moddhe parthokko aseh
+
+interface Devs {
+  readonly name: string;
+  age: number;
+  skill?: boolean;
+}
+
+const dev: User = {
+  name: "Fahim Shahrier",
+  age: 50,
+};
