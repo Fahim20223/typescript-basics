@@ -15,7 +15,7 @@ const ageCal2 = (name: string = "fahim", age: number = 30): string => {
 
 ageCal2();
 
-const info = (name: string) => {
+const infoo = (name: string) => {
   throw new Error("");
 };
 
@@ -30,6 +30,7 @@ const info = (name: string) => {
 //   true,
 //   false,
 // ];
+
 const food: string[] = ["alo", "potol", "lao", "kumra"];
 
 // food.push(20);
@@ -53,7 +54,7 @@ devs.push("zero");
 
 console.log(devs);
 
-// array er moddeh declare korar age bole di konta kon type hobeh etao kora jai like upore korsi & pore amra jokhon notun kichu push korbo sheta typescript nije nije any type dhore nibe that's why push() kora jai but pop() kora jai na...
+// array er moddeh declare korar agee bole di konta kon type hobeh etao kora jai like upore korsi & pore amra jokhon notun kichu push korbo sheta typescript nije nije any type dhore nibe that's why push() kora jai but pop() kora jai na...
 
 //Object
 
@@ -118,3 +119,13 @@ enum skills {
 const skill = skills.MERN;
 
 console.log(skill);
+
+// type narrowing
+
+const info = (val: number | string) => {
+  if (typeof val === "string") {
+    return val.toUpperCase();
+  }
+
+  return val + 10;
+};

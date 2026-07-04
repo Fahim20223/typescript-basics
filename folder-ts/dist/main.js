@@ -12,7 +12,7 @@ const ageCal2 = (name = "fahim", age = 30) => {
     return `hi ${name} , you are age is ${age}`;
 };
 ageCal2();
-const info = (name) => {
+const infoo = (name) => {
     throw new Error("");
 };
 // Array
@@ -54,4 +54,11 @@ var skills;
 })(skills || (skills = {}));
 const skill = skills.MERN;
 console.log(skill);
+// type narrowing
+const info = (val) => {
+    if (typeof val === "string") {
+        return val.toUpperCase();
+    }
+    return val + 10;
+};
 //# sourceMappingURL=main.js.map
