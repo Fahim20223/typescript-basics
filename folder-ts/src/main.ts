@@ -105,3 +105,16 @@ const dev: User = {
   name: "Fahim Shahrier",
   age: 50,
 };
+
+// enum type
+
+enum skills {
+  MERN = "MERN Stack",
+  LARAVEL = "PHP with Laravel",
+  DJANGO = "Python with Django",
+  IOS = "Flutter / Native",
+}
+
+const skill = skills.MERN;
+
+console.log(skill);
