@@ -129,3 +129,11 @@ const info = (val: number | string) => {
 
   return val + 10;
 };
+
+// Class in TypeScript
+
+class Student {
+  constructor(name: string, age: number, skill: boolean) {}
+}
+
+const student = new Student("fahim Shahrier", 30, true);

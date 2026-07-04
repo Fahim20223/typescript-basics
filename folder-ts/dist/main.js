@@ -61,4 +61,9 @@ const info = (val) => {
     }
     return val + 10;
 };
+// Class in TypeScript
+class Student {
+    constructor(name, age, skill) { }
+}
+const student = new Student("fahim Shahrier", 30, true);
 //# sourceMappingURL=main.js.map
