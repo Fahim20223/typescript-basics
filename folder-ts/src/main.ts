@@ -133,7 +133,7 @@ const info = (val: number | string) => {
 // Class in TypeScript
 
 class Student {
-  constructor(name: string, age: number, skill: boolean) {}
+  public constructor(name: string, age: number, skill: boolean) {}
 }
 
 const student = new Student("fahim Shahrier", 30, true);
