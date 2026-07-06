@@ -133,9 +133,11 @@ const info = (val: number | string) => {
 // Class in TypeScript
 
 class Student {
-  public name: string;
+  private name: string;
   public age: number;
-  public skill: boolean;
+  readonly skill: boolean;
+
+  // public bole dileo bydefault public thake
 
   constructor(name: string, age: number, skill: boolean) {
     this.name = name;
@@ -145,3 +147,7 @@ class Student {
 }
 
 const student = new Student("fahim Shahrier", 30, true);
+
+// console.log(student.name);
+console.log(student.age);
+console.log(student.skill);

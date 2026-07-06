@@ -63,7 +63,15 @@ const info = (val) => {
 };
 // Class in TypeScript
 class Student {
-    constructor(name, age, skill) { }
+    // public bole dileo bydefault public thake
+    constructor(name, age, skill) {
+        this.name = name;
+        this.age = age;
+        this.skill = skill;
+    }
 }
 const student = new Student("fahim Shahrier", 30, true);
+// console.log(student.name);
+console.log(student.age);
+console.log(student.skill);
 //# sourceMappingURL=main.js.map
