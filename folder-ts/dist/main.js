@@ -70,8 +70,17 @@ class Student {
         this.skill = skill;
     }
 }
+// Student theke access kortesi Teacher e ei method use kore cause okhane Protected dea ase r protected dea mane amr friend list chara kau e dekhte parbena like ekhane name,age,skill protected kora thakle oigulo Teacher e access kore dekhte parbo
+class Teacher extends Student {
+    constructor(name, age, skill) {
+        super(name, age, skill);
+    }
+    ageCAl() {
+        return this.name;
+    }
+}
 const student = new Student("fahim Shahrier", 30, true);
 // console.log(student.name);
-console.log(student.age);
-console.log(student.skill);
+// console.log(student.age);
+// console.log(student.skill);
 //# sourceMappingURL=main.js.map
