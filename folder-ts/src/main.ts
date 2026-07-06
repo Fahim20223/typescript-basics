@@ -144,9 +144,19 @@ class Student {
     this.age = age;
     this.skill = skill;
   }
+
+  private ageCAL(): string {
+    return "I am from public";
+  }
 }
 
 // Student theke access kortesi Teacher e ei method use kore cause okhane Protected dea ase r protected dea mane amr friend list chara kau e dekhte parbena like ekhane name,age,skill protected kora thakle oigulo Teacher e access kore dekhte parbo
+
+class Account extends Student {
+  constructor(name: string, age: number, skill: boolean) {
+    super(name, age, skill);
+  }
+}
 
 class Teacher extends Student {
   constructor(name: string, age: number, skill: boolean) {
@@ -163,3 +173,10 @@ const student = new Student("fahim Shahrier", 30, true);
 // console.log(student.name);
 // console.log(student.age);
 // console.log(student.skill);
+// console.log(student.ageCAL());
+
+// abstract class
+
+abstract class Brother {}
+
+// const brother = new Brother();
