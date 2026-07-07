@@ -180,3 +180,35 @@ const student = new Student("fahim Shahrier", 30, true);
 abstract class Brother {}
 
 // const brother = new Brother();
+
+// interface
+// interface er bhitore ja ja thakbe ta thaktei hobeh oigulo dea aseh mane oigulo chara hobehnah
+// we use inteface inside the class , we use type inside the object , We can use interface insdie the object also , we also can declare function inside the interface
+
+interface ProductInterface {
+  name: string;
+  age: number;
+  skill: boolean;
+  agecAl(): void;
+}
+
+interface Devvs {
+  learnDevs(): string;
+  getDevs(): boolean;
+}
+
+class Product implements ProductInterface {
+  public name: string = "fahim shahrier";
+  public age: number = 10;
+  public skill: boolean = true;
+
+  public agecAl(): void {}
+
+  public learnDevs(): string {
+    return "";
+  }
+
+  public getDevs(): boolean {
+    return true;
+  }
+}
